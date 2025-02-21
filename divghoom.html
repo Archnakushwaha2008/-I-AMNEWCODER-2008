@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: bisque;
+            animation: ani 5s linear infinite;
+        }
+        .main{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 400px;
+            height: 400px;
+            background-color:  rgb(236, 4, 236);
+            border: 5px solid rgb(136, 120, 120);
+            animation: ani 2s linear infinite;
+            /* margin-top: 100px; */
+            
+        }
+
+        .div0{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 600px;
+            height: 600px;
+            background-color: red;
+            border: 5px solid rgb(29, 20, 20);
+            animation: ani 2s linear infinite;
+            margin-top: 100px;
+            
+            
+        }
+        
+        .div1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 200px;
+            height: 200px;
+            font-size: 50px;
+            color: white;
+            
+            background-image: linear-gradient(blue, green);
+            border: 5px solid rgb(46, 40, 40);
+            animation: ani 0s linear infinite;
+        
+        }
+
+        @keyframes ani{
+            0%{
+                transform: rotate(0deg);
+            }
+
+
+            0%{
+                transform: rotate(-360deg);
+            }
+
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="div0">
+    <div class="main">
+        <div class="div1"><i>ARCHNA</i></div>
+    </div>
+    </div>
+</body>
+</html>
