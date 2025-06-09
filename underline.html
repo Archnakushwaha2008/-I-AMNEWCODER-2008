@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: cadetblue;
+        }
+        h1{
+            width: max-content;
+            font-size: 72px;
+            position: relative;
+            cursor: pointer;
+            margin: 100px auto;
+            text-shadow: 3px 3px white;
+        }
+        h1::after{
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            height: 4px;
+            width: 100%;
+            left: 0;
+            background-color: #ca0909;
+            transition: 0.3s;
+            transition-timing-function: ease-in-out;
+            transform: scaleX(0);
+
+        }
+        h1:hover::after{
+            transform: scaleX(1);
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Hover Me
+    </h1>
+</body>
+</html>
